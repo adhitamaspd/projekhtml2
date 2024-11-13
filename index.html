@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML Dasar</title>
+</head>
+
+<body>
+    <!-- Ini heading -->
+    <h1>Belajar HTML Itu Asyik!</h1>
+    <hr>
+
+    <!-- Ini paragraf -->
+    <p><b>Hari ini</b><i> kita mulai </i><u>ekskul Informatika Club</u></p>
+    <p><i><b><u>Hari ini kita mulai ekskul Informatika Club</u></b></i></p>
+
+    <!-- Ini gambar -->
+    <img src="pohon.jpg" alt="pohon" width="350"><br><br>
+    <img src="https://img.freepik.com/free-photo/cloud-forest-landscape_23-2151794686.jpg" alt="pemandangan"
+        width="350"><br><br>
+
+    <!-- Ini link -->
+    <!-- Eksternal link -->
+    <a href="https://www.google.com/">Google</a><br>
+    <a href="https://www.yahoo.com/" target="_blank">Yahoo</a><br>
+    <a href="https://www.bing.com/" target="_blank">Bing</a><br><br>
+    <!-- Internal link -->
+    <a href="halaman-1.html">Ke Halaman 1</a><br>
+    <a href="halaman-2.html">Ke Halaman 2</a><br>
+
+    <!-- Link email -->
+    <p>Email ke <a href="mailto:adhitamaspd@gmail.com">adhitamaspd@gmail.com</a></p>
+
+    <!-- Link dalam Gambar -->
+    <a href=""><img src="" alt=""></a>
+    <a href="https://www.youtube.com/" target="_blank"><img
+            src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+            alt="logo youtube" width="50"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img
+            src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt="logo instagram" width="50"></a>
+    <a href="https://www.tiktok.com/" target="_blank"><img
+            src="https://static.vecteezy.com/system/resources/previews/006/057/996/original/tiktok-logo-on-transparent-background-free-vector.jpg"
+            alt="logo tiktok" width="50"></a>
+    <hr>
+    <!-- Ini List -->
+    <!-- List tidak urut -->
+    <h4>Daftar Tidak Urut</h4>
+    <ul style="list-style-type: disc/square/circle/none;">
+        <li>ayam</li>
+        <li>itik</li>
+        <li>bebek</li>
+    </ul>
+
+    <!-- List urut -->
+    <h4>Daftar Urut</h4>
+    <ol type="a">
+        <li>motor</li>
+        <li>mobil</li>
+        <li>truk</li>
+    </ol>
+
+    <table border="1">
+        <thead>
+            <tr align="center">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Media Sosial</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Adhitama</td>
+            <td align="center">7E</td>
+            <td>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </td>
+            <td><img src="pohon.jpg" alt="" width="100"></td>
+        </tr>
+    </table><br>
+
+    <table border="1">
+        <tr>
+            <td colspan="2">1,1</td>
+            <td>1,3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2,1</td>
+            <td>2,2</td>
+            <td rowspan="2">2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="1">
+        <tr>
+            <td colspan="3" style="background-color: rgb(255, 238, 0);">1,1</td>
+            <td rowspan="3" style="background-color: rgb(0, 221, 255);">1,4</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background-color: rgb(30, 255, 0);">2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: rgba(244, 159, 75, 0.924);">4,2</td>
+        </tr>
+    </table><br>
+
+    <h3>- Formulir Pendaftaran -</h3>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" id="nama" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" required>
+            </tr>
+            <tr>
+                <td><label for="">Tanggal lahir</label></td>
+                <td>:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Jenis kelamin</label></td>
+                <td>:</td>
+                <td><input type="radio" id="laki" name="jeniskl">
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jeniskl">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Hobi</label></td>
+                <td>:</td>
+                <td><input type="checkbox" id="masak">
+                    <label for="masak">Memasak</label>
+                    <input type="checkbox" id="mancing">
+                    <label for="mancing">Memancing</label>
+                </td>
+            </tr>
+        </table>
+        <input type="reset" value="Hapus">
+        <input type="submit" value="Kirim">
+    </form>
+
+</html>
